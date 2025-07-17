@@ -30,7 +30,7 @@ A **real-time messenger application** built using **Node.js, Socket.io, and Vani
 1.  **Clone the repository**
 
     ```bash
-    git clone [https://github.com/AD2209/CHAT.io.git](https://github.com/AD2209/CHAT.io.git)
+    git clone https://github.com/AD2209/CHAT.io.git
     cd CHAT.io
     ```
 
