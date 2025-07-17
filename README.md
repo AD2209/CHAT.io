@@ -46,6 +46,7 @@ cd CHAT.io
 
    Visit http://localhost:5000 to use the messenger locally.
 
+---
 
 ##🔷 **Folder Structure**
 
@@ -58,13 +59,16 @@ cd CHAT.io
   ├── package.json
   └── README.md
 
-  
+---
+
 ##🔷 **Usage**
 
 ✅Enter your name to join the chat.
 ✅Type messages or search GIFs using the GIF icon and send.
 ✅Logout will disconnect you from the lobby.
 ✅If no users remain online, chat history auto-resets for clean re-entry.
+
+---
 
 ##🔷 **Future Enhancements**
 
@@ -75,4 +79,4 @@ cd CHAT.io
 
 👤 Ayush Dwivedi
 🌐 LinkedIn : https://www.linkedin.com/in/ayush-dwivedi2209/
-🌐 GitHub : 
+🌐 GitHub : https://github.com/AD2209
