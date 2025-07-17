@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <title>CHAT.io</title>
+  <style>
+    
+    body {
+  margin: 0;
+  padding: 0;
+  background: url('https://c.tenor.com/J7kPFbkrT-gAAAAd/space-planets.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loginPage, #chatPage {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#loginPage.active, #chatPage.active {
+  display: flex;
+}
+
+#loginPage {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#loginPage h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#usernameInput {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+#loginButton {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#loginButton:hover {
+  background: #5a67d8;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.0em; /* adjust as needed */
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+#messages {
+  width: 100%;
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+#messages div {
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 15px;
+  color: #333;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  word-wrap: break-word;
+}
+
+#gifResults img {
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  max-height: 100px;
+}
+
+#gifResults img:hover {
+  transform: scale(1.1);
+}
+
+.inputBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+    
+
+
+  </style>
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="loginPage" class="active">
+    <h1>Login to CHAT.io</h1>
+    <input type="text" id="usernameInput" placeholder="Enter your name" />
+    <button id="loginButton">Login</button>
+  </div>
+
+  <!-- Chat Page -->
+  <div id="chatPage">
+    <h1>CHAT.io</h1>
+
+    <div id="messages"></div>
+
+    <!-- Input Bar -->
+    <div class="inputBar">
+      <button id="gifSearchButton" class="icon-button">🎬</button>
+      <input id="input" class="message-input" autocomplete="off" placeholder="Type a message..." />
+      <button id="sendButton" class="icon-button">📨</button>
+    </div>
+
+    <div id="gifResults"></div>
+
+    <button id="logoutButton">Logout</button>
+  </div>
+
+</body>
+</html>
