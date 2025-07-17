@@ -52,6 +52,15 @@ A **real-time messenger application** built using **Node.js, Socket.io, and Vani
 
 ---
 
+## 🔷 Deployment
+
+-   ✔️ **Live Demo:** [https://chat-io-messenger.onrender.com](https://chat-io-messenger.onrender.com) (update after deployment)
+-   ✔️ **Deployed on Render with:**
+    -   **Build Command:** `npm install`
+    -   **Start Command:** `node server.js`
+
+---
+
 ## 🔷 Folder Structure
 CHAT.io/
 ├── public/
