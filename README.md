@@ -4,79 +4,86 @@ A **real-time messenger application** built using **Node.js, Socket.io, and Vani
 
 ---
 
-## 🔷 **Features**
+## 🔷 Features
 
-✅ Real-time messaging with Socket.io  
-✅ User login with display name  
-✅ GIF search and sharing (via GIPHY API)  
-✅ Space-themed, game-like pixel UI  
-✅ Auto-reset messages when no users are online  
-✅ Clean, minimal backend without database dependencies  
-✅ Responsive and aesthetic front-end
-
----
-
-## 🔷 **Tech Stack**
-
-- **Frontend:** HTML, CSS, Vanilla JavaScript
-- **Backend:** Node.js, Express.js, Socket.io
-- **APIs:** GIPHY API for GIF search
-- **Deployment:** Render
+-   ✅ **Real-time messaging** with Socket.io
+-   ✅ **User login** with display name
+-   ✅ **GIF search and sharing** (via GIPHY API)
+-   ✅ **Space-themed, game-like pixel UI**
+-   ✅ **Auto-reset messages** when no users are online
+-   ✅ **Clean, minimal backend** without database dependencies
+-   ✅ **Responsive and aesthetic front-end**
 
 ---
 
-## 🔷 **Setup Instructions**
+## 🔷 Tech Stack
 
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/AD2209/CHAT.io.git
-cd CHAT.io
-```
-
-2. **Install dependencies**
-
-   npm install
-
-3. **Run the server**
-
-   node server.js
-   
-4. **Open in browser**
-
-   Visit http://localhost:5000 to use the messenger locally.
+-   **Frontend:** HTML, CSS, Vanilla JavaScript
+-   **Backend:** Node.js, Express.js, Socket.io
+-   **APIs:** GIPHY API for GIF search
+-   **Deployment:** Render
 
 ---
 
-##🔷 **Folder Structure**
+## 🔷 Setup Instructions
 
-  messenger-app/
-  ├── public/
-  │   ├── index.html
-  │   ├── script.js
-  │   └── styles.css
-  ├── server.js
-  ├── package.json
-  └── README.md
+1.  **Clone the repository**
+
+    ```bash
+    git clone [https://github.com/AD2209/CHAT.io.git](https://github.com/AD2209/CHAT.io.git)
+    cd CHAT.io
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the server**
+
+    ```bash
+    node server.js
+    ```
+
+4.  **Open in browser**
+
+    Visit `http://localhost:5000` to use the messenger locally.
 
 ---
 
-##🔷 **Usage**
-
-✅Enter your name to join the chat.
-✅Type messages or search GIFs using the GIF icon and send.
-✅Logout will disconnect you from the lobby.
-✅If no users remain online, chat history auto-resets for clean re-entry.
+## 🔷 Folder Structure
+CHAT.io/
+├── public/
+│   ├── index.html
+│   ├── script.js
+│   └── styles.css
+├── server.js
+├── package.json
+└── README.md
 
 ---
 
-##🔷 **Future Enhancements**
+## 🔷 Usage
 
-✅Add MongoDB for persistent chat history
-✅Implement video call feature
-✅User authentication with JWT
-✅File sharing support
+-   ✅ Enter your name to join the chat.
+-   ✅ Type messages or search GIFs using the GIF icon and send.
+-   ✅ Logout will disconnect you from the lobby.
+-   ✅ If no users remain online, chat history auto-rehttps://github.com/AD2209set for clean re-entry.
 
-👤 Ayush Dwivedi
-🌐 LinkedIn : https://www.linkedin.com/in/ayush-dwivedi2209/
-🌐 GitHub : https://github.com/AD2209
+---
+
+## 🔷 Future Enhancements
+
+-   ✅ Add MongoDB for persistent chat history
+-   ✅ Implement video call feature
+-   ✅ User authentication with JWT
+-   ✅ File sharing support
+
+---
+
+## 👤 Connect
+
+-   **Ayush Dwivedi**
+-   **LinkedIn:** [https://www.linkedin.com/in/ayush-dwivedi2209/](https://www.linkedin.com/in/ayush-dwivedi2209/)
+-   **GitHub:** [https://github.com/AD2209](https://github.com/AD2209)
